@@ -68,13 +68,13 @@ router.post("/create", async (req, res) => {
         });
 
         res.status(201).json({
-            message: "Poll created successfully ✅",
+            message: "Poll created successfully!",
             pollId: newPoll._id,
             shareLink: `/poll/${newPoll._id}`,
         });
     } catch (error) {
         res.status(500).json({
-            message: "Server error ❌",
+            message: "Server error!",
             error: error.message,
         });
     }
