@@ -41,14 +41,14 @@ router.post("/create", async (req, res) => {
     try {
         const { question, options } = req.body;
 
-        // Edge Case: Missing fields
+        // Missing fields
         if (!question || !options) {
             return res.status(400).json({
                 message: "Question and options are required",
             });
         }
 
-        // Edge Case: Minimum 2 options required
+        // Minimum 2 options required
         if (options.length < 2) {
             return res.status(400).json({
                 message: "At least 2 options are required",
