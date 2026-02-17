@@ -44,7 +44,7 @@ app.use("/api/polls", pollRoute);
 
 // Test Route
 app.get("/", (req, res) => {
-    res.send("Poll Rooms Backend is Running 🚀");
+    res.send("Poll Rooms Backend is Running!");
 });
 
 // Server Start
